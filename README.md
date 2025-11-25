@@ -3,27 +3,25 @@
 # 🎓 PAP - [Título do Projeto]
 
 ## 👤 Informação do Aluno
-**Nome:** [Teu Nome Completo]  
-**Número:** [Número de Aluno]  
+**Nome:** [Tomás Camarinha Dias]  
+**Número:** [20]  
 **Curso:** Profissional de Informática - Sistemas
 **Ano Letivo:** 2025/2026 
-**Orientador:** [Nome do Professor Orientador]
+**Orientador:** [Patricia Carvalhais]
 
 ## 📋 Descrição do Projeto
-[Descreve brevemente o teu projeto em 2-3 frases. Exemplo:]  
-Sistema de gestão de biblioteca online que permite aos utilizadores pesquisar livros, fazer reservas e gerir o seu perfil de leitor.
+Criar um website simples no qual fala sobre uma liga escolar e 
 
 ## 🎯 Objetivos Principais
-- [ ] Desenvolver um site dinâmico com base de dados
-- [ ] Implementar sistema de autenticação de utilizadores
-- [ ] Criar interface responsiva e intuitiva
-- [ ] Implementar funcionalidade CRUD completa
-- [ ] Fazer deploy da aplicação
+- Desenvolver um site dinâmico com base de dados
+- Implementar sistema de autenticação de utilizadores
+- Criar interface responsiva e intuitiva
+- Implementar funcionalidade CRUD completa  
 
 ## 🛠️ Stack Tecnológica
 
 ### **Frontend**
-- [ ] HTML5, CSS3, JavaScript
+- [x] HTML5, CSS3, JavaScript
 - [ ] Bootstrap/Tailwind CSS [ou outro framework]
 - [ ] React/Vue.js [opcional]
 
