@@ -1,75 +1,208 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Bitnami: Open Source. Simplified</title>
-  <link href="bitnami.css" media="all" rel="Stylesheet" type="text/css" /> 
-  <link href="/dashboard/stylesheets/all.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liga Escolar - Federação Portuguesa de Futebol</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* ----------- TOPO ----------- */
+    header {
+      background: linear-gradient(90deg, #000 0%, #d60000 50%, #006633 100%);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-area img {
+      height: 50px;
+    }
+
+    .logo-area h1 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ----------- MENU SUPERIOR ----------- */
+    nav {
+      background-color: #1c1c1c;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #d60000;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .nav-right input[type="text"] {
+      padding: 5px 10px;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+    }
+
+    .menu-btn {
+      background-color: #d60000;
+      border: none;
+      color: white;
+      padding: 8px 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .menu-btn:hover {
+      background-color: #a00000;
+    }
+
+    /* ----------- SEÇÃO PRINCIPAL ----------- */
+    .main-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+    }
+
+    .main-text {
+      max-width: 45%;
+    }
+
+    .main-text h2 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .main-text p {
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .main-text a {
+      background-color: #d60000;
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 3px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: background 0.3s;
+    }
+
+    .main-text a:hover {
+      background-color: #900;
+    }
+
+    .main-image {
+      width: 45%;
+    }
+
+    .main-image img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* ----------- RODAPÉ ----------- */
+    footer {
+      background-color: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.8rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="contain-to-grid">
-    <nav class="top-bar" data-topbar>
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="/dashboard/index.html">Apache Friends</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon">
-          <a href="#">
-            <span>Menu</span>
-          </a>
-        </li>
-      </ul>
 
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-         
-        </ul>
-      </section>
-    </nav>
-  </div>
-  <div id="wrapper">
-    <div class="hero">
-       <div class="row">
-         <div class="large-12 columns">
-            <p>Apache Friends and Bitnami are cooperating to make dozens of open source applications available on XAMPP, for free. Bitnami-packaged applications include Wordpress, Drupal, Joomla! and dozens of others and can be deployed with one-click installers. Visit the <a href="https://bitnami.com/xampp?utm_source=bitnami&utm_medium=installer&utm_campaign=XAMPP%2BModule" target="_blank">Bitnami XAMPP page</a> for details on the currently available apps.</p><br/>
-            <p>Check out our <a href="https://www.apachefriends.org/bitnami_for_xampp.html" target="_blank" >Bitnami for XAMPP Start Guide</a> for more information about the applications installed.</p>
-         </div>
-       </div>
+  <!-- TOPO -->
+  <header>
+    <div class="logo-area">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/FPF_logo.svg" alt="FPF Logo">
+      <h1>Federação Portuguesa de Futebol - Liga Escolar</h1>
     </div>
-    <div id="lowerContainer" class="row">
-      <div id="content" class="large-12 columns">
-          <!-- @@BITNAMI_MODULE_PLACEHOLDER@@ -->
-      </div>
+  </header>
+
+  <!-- MENU -->
+  <nav>
+    <div class="nav-links">
+      <a href="index.php">Início</a>
+      <a href="calendario.php">Calendário</a>
+      <a href="classificacao.php">Classificação</a>
+      <a href="equipas.php">Equipas</a>
+      <a href="login.php">Login</a>
+
     </div>
-  </div>
+
+    <div class="nav-right">
+      <input type="text" placeholder="Pesquisa...">
+      <button class="menu-btn">Menu</button>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <section class="main-section">
+    <div class="main-text">
+      <h2>Bem-vindo à Liga Escolar!</h2>
+      <p>Descobre as equipas, o calendário dos jogos e acompanha a classificação da nossa competição escolar.</p>
+      <a href="classificacao.php">Ver Classificação</a>
+    </div>
+
+    <div class="main-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Women_football_match.jpg" alt="Jogo de Futebol">
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
   <footer>
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="row">
-          <div class="large-8 columns">
-            <ul class="social">
-              <li class="twitter"><a href="https://twitter.com/apachefriends">Follow us on Twitter</a></li>
-              <li class="facebook"><a href="https://www.facebook.com/we.are.xampp">Like us on Facebook</a></li>
-              <li class="google"><a href="https://plus.google.com/+xampp/posts">Add us to your G+ Circles</a></li>
-            </ul>
-
-            <ul class="inline-list">
-              <li><a href="https://www.apachefriends.org/blog.html">Blog</a></li>
-              <li><a href="https://www.apachefriends.org/privacy_policy.html">Privacy Policy</a></li>
-              <li>
-                <a target="_blank" href="http://www.fastly.com/">                    CDN provided by
-                  <img width="48" data-2x="/dashboard/images/fastly-logo@2x.png" src="/dashboard/images/fastly-logo.png" />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="large-4 columns">
-            <p class="text-right">Copyright (c) 2015, Apache Friends</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    © 2025 Liga Escolar - Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
+
