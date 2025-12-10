@@ -1,159 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Liga à La Tomeiz</title>
 
     <style>
-        body {
+        /* RESET */
+        * {
             margin: 0;
             padding: 0;
-            font-family: 'Arial Black', sans-serif;
-            background-color: #000;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #111;
         }
 
         /* NAVBAR */
-        .navbar {
+        nav {
             width: 100%;
-            background-color: #133105ff;
-            padding: 10px 20px;
-            display: center;
-            position: fixed;
+            background: #0d2c00;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
+            position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 10;
         }
 
-        .navbar img {
-            height: 50px;
-            display: center; 
-            
-        }
-
-        .menu {
+        nav ul {
             display: flex;
-            gap: 95px;
-        }
-        .menu a {
-            color: #fff;
-            font-size: 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 3px;
+            gap: 30px;
+            list-style: none;
         }
 
-        .hero {
-            height: 89vh;
+        nav a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #7aff65;
+            transition: 0.3s;
+        }
+
+        nav a:hover::after {
             width: 100%;
-            background: url("10c.png") no-repeat center center/cover;
-            background position: center;
-            position: center;
+        }
+
+        /* HERO */
+        .hero {
+            background: url("10c.png") center/cover no-repeat;
+            height: 90vh;
             display: flex;
             align-items: center;
-            padding-left: 80px;
-            padding-right: 10px;
+            padding-left: 60px;
+            color: white;
+            position: relative;
         }
 
-        .overlay {
+        .hero::after {
+            content: "";
             position: absolute;
-            inset: 90;
-            background: rgba(0, 0, 0, 0.45);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.55);
         }
 
         .hero-content {
             position: relative;
             max-width: 600px;
-            z-index: 6;
+            animation: fadeIn 1.2s ease;
         }
 
-        .tag {
-            background-color: #00ff40;
-            color: #000;
-            width: fit-content;
-            padding: 6px 12px;
-            border-radius: 5px;
-            font-size: 13px;
-            text-transform: uppercase;
-            font-weight: bold;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        .hero-title {
-            margin: 15px 0;
-            font-size: 48px;
-            font-weight: 900;
-            line-height: 1.2;
-            color: #000000ff;
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+            line-height: 1.1;
         }
 
-        .hero-desc {
-            color: #000000ff;
-            font-size: 17px;
-            line-height: 1.5;
-            margin-bottom: 20px;
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
         }
 
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            color: #00ff40;
+            padding: 14px 28px;
             font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            border: 2px solid #00ff40;
-            padding: 10px 20px;
-            border-radius: 25px;
+            background: #7aff65;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
         }
 
         .btn:hover {
-            background-color: #00ff40;
-            color: #000;
+            background: #57d445;
+            transform: scale(1.05);
         }
-        a:focus {
-    outline: none;
-}
 
+        /* SECÇÕES */
+        section {
+            padding: 60px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        /* CARD EXEMPLO */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px;
+            }
+            .hero {
+                padding: 20px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <?php include 'navbar.php'; ?><div class="navbar">
-        <img src="logo_liga.png" alt="Logo Liga">
-        <div class="menu"> 
-        <ul></ul>
-            <a href="calendario.php">Calendário</a></li>
-            <a href="equipas.php">Equipas</a></li>
-            <a href="jogadores.php">Jogadores</a></li>
-            <a href="registo.php">Login</a></li>
-        </li>
-    </ul>
-<div class="ghost"></div>
-</nav>
+    <!-- NAV -->
+    <nav>
+        <h2 style="color: white;">⚽ Liga Tomeiz</h2>
+        <ul>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#calendario">Calendário</a></li>
+            <li><a href="#equipas">Equipas</a></li>
+            <li><a href="#jogadores">Jogadores</a></li>
+            
+        </ul>
+    </nav>
 
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>A Turma Surpresa Será Campeã na Liga à La Tomeiz!</h1>
+            <p>Não importa o resultado — importa a tua energia em campo. Junta-te à liga e mostra o teu talento!</p>
+            <button class="btn" onclick="scrollToSection()">Quero Participar</button>
         </div>
     </div>
 
-    <!-- HERO -->
-<div class="hero">
-    <div class="overlay"></div>
 
-    <div class="hero-content">
-        <div class="tag">LIGA À LA TOMEIZ</div>
-
-        <h1 class="hero-title">
-            A TURMA SURPRESA DO CAMPEONATO<br>
-            SERÁ VENCEDORA DA LIGA À LA TOMEIZ
-        </h1>
-
-        <p class="hero-desc">
-            Não importa o resultado, importa a tua energia em campo. 
-            Junta-te à liga e mostra o teu talento!
-        </p>
-    </div>
-</div>
-
-  
+</body>
+</html>
