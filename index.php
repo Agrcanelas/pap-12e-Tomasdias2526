@@ -1,204 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liga Escolar - Federação Portuguesa de Futebol</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga à La Tomeiz</title>
 
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      background-color: #fff;
-      color: #000;
-    }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial Black', sans-serif;
+            background-color: #000;
+        }
 
-    /* ----------- TOPO ----------- */
-    header {
-      background: linear-gradient(90deg, #000 0%, #d60000 50%, #006633 100%);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 30px;
-    }
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+            background-color: #133105ff;
+            padding: 10px 20px;
+            display: center;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            z-index: 100;
+        }
 
-    .logo-area {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
+        .navbar img {
+            height: 50px;
+            display: center; 
+            
+        }
 
-    .logo-area img {
-      height: 50px;
+        .menu {
+            display: flex;
+            gap: 95px;
+        }
+        .menu a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .hero {
+            height: 89vh;
+            width: 100%;
+            background: url("10c.png") no-repeat center center/cover;
+            background position: center;
+            position: center;
+            display: flex;
+            align-items: center;
+            padding-left: 80px;
+            padding-right: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 90;
+            background: rgba(0, 0, 0, 0.45);
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 600px;
+            z-index: 6;
+        }
+
+        .tag {
+            background-color: #00ff40;
+            color: #000;
+            width: fit-content;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .hero-title {
+            margin: 15px 0;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 1.2;
+            color: #000000ff;
+        }
+
+        .hero-desc {
+            color: #000000ff;
+            font-size: 17px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #00ff40;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid #00ff40;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+
+        .btn:hover {
+            background-color: #00ff40;
+            color: #000;
+        }
+        a:focus {
+    outline: none;
 }
 
-    .logo-area h1 {
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    /* ----------- MENU SUPERIOR ----------- */
-    nav {
-      background-color: #1c1c1c;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 40px;
-      color: white;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      transition: color 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: #d60000;
-    }
-    
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .nav-right input[type="text"] {
-      padding: 5px 10px;
-      border-radius: 4px;
-      border: none;
-      outline: none;
-    }
-
-    .menu-btn {
-      background-color: #d60000;
-      border: none;
-      color: white;
-      padding: 8px 14px;
-      text-transform: uppercase;
-      font-weight: bold;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .menu-btn:hover {
-      background-color: #a00000;
-    }
-    .main-section {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 60px;
-    }
-
-    .main-text {
-      max-width: 45%;
-    }
-
-    .main-text h2 {
-      font-size: 2.4rem;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-    }
-
-    .main-text p {
-      color: #444;
-      line-height: 1.6;
-      margin-bottom: 25px;
-    }
-
-    .main-text a {
-      background-color: #d60000;
-      color: white;
-      text-decoration: none;
-      padding: 12px 25px;
-      border-radius: 3px;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: background 0.3s;
-    }
-
-    .main-text a:hover {
-      background-color: #900;
-    }
-    
-    .main-image {
-      width: 45%;
-    }
-
-    .main-image img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    /* ----------- RODAPÉ ----------- */
-    footer {
-      background-color: #1c1c1c;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 0.8rem;
-    }
-  </style>
+    </style>
 </head>
+
 <body>
 
-  <!-- TOPO -->
-  <header>
-    <div class="logo-area">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/FPF_logo.svg" alt="FPF Logo">
-      <h1>Federação Portuguesa de Futebol - Liga Escolar</h1>
-    </div>
-  </header>
+    <!-- NAVBAR -->
+    <?php include 'navbar.php'; ?><div class="navbar">
+        <img src="logo_liga.png" alt="Logo Liga">
+        <div class="menu"> 
+        <ul></ul>
+            <a href="calendario.php">Calendário</a></li>
+            <a href="equipas.php">Equipas</a></li>
+            <a href="jogadores.php">Jogadores</a></li>
+            <a href="registo.php">Login</a></li>
+        </li>
+    </ul>
+<div class="ghost"></div>
+</nav>
 
-  <!-- MENU -->
-  <nav>
-    <div class="nav-links">
-      <a href="index.php">Início</a>
-      <a href="calendario.php">Calendário</a>
-      <a href="classificacao.php">Classificação</a>
-      <a href="equipas.php">Equipas</a>
-      <a href="login.php">Login</a>
-
+        </div>
     </div>
 
-    <div class="nav-right">
-      <input type="text" placeholder="Pesquisa...">
-      <button class="menu-btn">Menu</button>
-    </div>
-  </nav>
+    <!-- HERO -->
+<div class="hero">
+    <div class="overlay"></div>
 
-  <!-- CONTEÚDO PRINCIPAL -->
-  <section class="main-section">
-    <div class="main-text">
-      <h2>Bem-vindo à Liga Escolar!</h2>
-      <p>Descobre as equipas, o calendário dos jogos e acompanha a classificação da nossa competição escolar.</p>
-      <a href="classificacao.php">Ver Classificação</a>
-    </div>
-     <div class="main-image">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Women_football_match.jpg" alt="Jogo de Futebol">
-    </div>
-  </section>
+    <div class="hero-content">
+        <div class="tag">LIGA À LA TOMEIZ</div>
 
-  <!-- RODAPÉ -->
-  <footer>
-    © 2025 Liga Escolar - Todos os direitos reservados.
-  </footer>
+        <h1 class="hero-title">
+            A TURMA SURPRESA DO CAMPEONATO<br>
+            SERÁ VENCEDORA DA LIGA À LA TOMEIZ
+        </h1>
 
-</body>
-</html>
+        <p class="hero-desc">
+            Não importa o resultado, importa a tua energia em campo. 
+            Junta-te à liga e mostra o teu talento!
+        </p>
+    </div>
+</div>
+
+  
