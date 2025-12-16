@@ -27,6 +27,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            font-size: 23px;
 
         }
         nav ul {
@@ -46,12 +47,12 @@
         nav a::after {
             content: "";
             position: absolute;
-            bottom: -5px;
+            bottom: -4px;
             left: 0;
             width: 0%;
-            height: px;
+            height: 4px;
             background: #7aff65;
-            transition: 0.3s;
+            transition: 0.1s;
         }
 
         nav a:hover::after {
@@ -91,14 +92,14 @@
 }
 
 .hero h1 {
-    font-size: 46px;
+    font-size: 65px;
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 28px;
+    font-size: 45px;
     font-weight: 500;
     opacity: 0.95;
     margin-bottom: 25px;
@@ -137,31 +138,6 @@
         h2 {
             margin-bottom: 20px;
         }
-
-        /* CARD EXEMPLO */
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-6px);
-        }
-
-        /* RESPONSIVO */
-        @media (max-width: 76px) {
-            nav {
-                padding: 20px;
-            }
-            .hero {
-                padding: 20px;
-            }
-            .hero h1 {
-                font-size: 32px;
-            }
-        }
     </style>
 </head>
 
@@ -169,7 +145,7 @@
 
     <!-- NAV -->
     <nav>
-        <h2 style="color: white;">Liga Tomeiz</h2>
+        <h2 style="color: white;">Liga á laTomeiz</h2>
         <ul>
             <a href="registo.php">Login</a></li>
             <a href="calendario.php">Calendário</a></li>
@@ -186,7 +162,6 @@
         <div class="hero-content">
             <h1>A Turma Surpresa Será Campeã na Liga à La Tomeiz!</h1>
             <p>Não importa o resultado — importa a tua energia em campo. Junta-te à liga e mostra o teu talento!</p>
-            <button class="btn" onclick="scrollToSection()">Quero Participar</button>
         </div>
     </div>
 
