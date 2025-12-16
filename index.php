@@ -23,18 +23,15 @@
         nav {
             width: 100%;
             background: #0d2c00;
-            padding: 20px 60px;
+            padding: 20px 140px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
 
+        }
         nav ul {
             display: flex;
-            gap: 30px;
+            gap: 90px;
             list-style: none;
         }
 
@@ -49,10 +46,10 @@
         nav a::after {
             content: "";
             position: absolute;
-            bottom: -4px;
+            bottom: -5px;
             left: 0;
             width: 0%;
-            height: 2px;
+            height: px;
             background: #7aff65;
             transition: 0.3s;
         }
@@ -62,47 +59,60 @@
         }
 
         /* HERO */
-        .hero {
-            background: url("10c.png") center/cover no-repeat;
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            padding-left: 60px;
-            color: white;
-            position: relative;
-        }
+      .hero {
+    background: url("10c.png") center/cover no-repeat;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+}
 
-        .hero::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.55);
-        }
+/* gradiente só no lado do texto */
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0)
+    );
+}
 
-        .hero-content {
-            position: relative;
-            max-width: 600px;
-            animation: fadeIn 1.2s ease;
-        }
+/* texto */
+.hero-content {
+    position: relative;
+    max-width:610px;
+    color: white;
+}
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+.hero h1 {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
 
-        .hero h1 {
-            font-size: 50px;
-            margin-bottom: 15px;
-            line-height: 1.1;
-        }
+.hero p {
+    font-size: 28px;
+    font-weight: 500;
+    opacity: 0.95;
+    margin-bottom: 25px;
+}
 
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
+/* botão */
+.btn {
+    background: #7aff65;
+    color: #0d2c00;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 8px;
+}
+
 
         .btn {
             padding: 14px 28px;
@@ -141,7 +151,7 @@
         }
 
         /* RESPONSIVO */
-        @media (max-width: 768px) {
+        @media (max-width: 76px) {
             nav {
                 padding: 20px;
             }
@@ -159,12 +169,14 @@
 
     <!-- NAV -->
     <nav>
-        <h2 style="color: white;">⚽ Liga Tomeiz</h2>
+        <h2 style="color: white;">Liga Tomeiz</h2>
         <ul>
-            <li><a href="#login">Login</a></li>
-            <li><a href="#calendario">Calendário</a></li>
-            <li><a href="#equipas">Equipas</a></li>
-            <li><a href="#jogadores">Jogadores</a></li>
+            <a href="registo.php">Login</a></li>
+            <a href="calendario.php">Calendário</a></li>
+            <a href="equipas.php">Equipas</a></li>
+            <a href="jogadores.php">Jogadores</a></li>
+            
+            
             
         </ul>
     </nav>

@@ -122,4 +122,39 @@
 </div>
 
 </body>
-</html>
+</html><!-- Mensagem de sucesso ou ajuda após criar conta ou perda de dados -->
+<div class="form-container" id="message-container" style="display: none;">
+    <h2 id="message-title"></h2>
+    <p id="message-text"></p>
+    <button onclick="closeMessage()">Fechar</button>
+</div>
+
+<script>
+    // Função para exibir mensagem personalizada
+    function showMessage(type) {
+        const container = document.getElementById('message-container');
+        const title = document.getElementById('message-title');
+        const text = document.getElementById('message-text');
+
+        if(type === 'success') {
+            title.textContent = 'Conta Criada com Sucesso!';
+            text.innerHTML = 'A tua conta foi criada. Já podes fazer login.<br>Se encontrares problemas, contacta o suporte.';
+        } else if(type === 'data-loss') {
+            title.textContent = 'Problema com os Dados';
+            text.innerHTML = 'Detectámos uma possível perda de dados.<br>Por favor, tenta recuperar a tua conta ou contacta o suporte.';
+        }
+
+        container.style.display = 'block';
+    }
+
+    function closeMessage() {
+        document.getElementById('message-container').style.display = 'none';
+    }
+
+    // Exemplo: exibir mensagem de sucesso após registro
+    // showMessage('success');
+
+    // Exemplo: exibir mensagem de perda de dados
+    // showMessage('data-loss');
+</script>
+

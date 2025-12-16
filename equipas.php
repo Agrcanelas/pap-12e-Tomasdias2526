@@ -93,7 +93,7 @@ body {
 
 <script>
 const anos = [10,11,12];
-const letras = ['A','B','C','D'];
+const letras = ['A','B','C'];
 const container = document.currentScript.parentNode;
 
 anos.forEach(ano => {
