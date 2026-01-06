@@ -24,8 +24,6 @@
         background: rgba(0, 0, 0, 0.55);
         z-index: 1;
     }
-
-    /* CAIXA DO LOGIN/REGISTO */
     .form-container {
         position: relative;
         z-index: 2;
@@ -38,19 +36,16 @@
         text-align: center;
         color: white;
     }
-
     .form-container h2 {
         margin: 0;
         font-size: 30px;
         color: #00ff40;
         text-transform: uppercase;
     }
-
     .form-container p {
         margin-top: 5px;
         color: #ccc;
     }
-
     .form-container input {
         width: 95%;
         padding: 12px;
@@ -63,7 +58,6 @@
         outline: none;
         text-transform: uppercase;
     }
-
     .form-container input::placeholder {
         color: #00ff4088;
     }
@@ -85,8 +79,6 @@
     .form-container button:hover {
         background-color: #00cc35;
     }
-
-    /* LINK PARA TROCAR LOGIN/REGISTO */
     .form-container a {
         color: #00ff40;
         text-decoration: none;
@@ -122,7 +114,7 @@
 </div>
 
 </body>
-</html><!-- Mensagem de sucesso ou ajuda após criar conta ou perda de dados -->
+</html>
 <div class="form-container" id="message-container" style="display: none;">
     <h2 id="message-title"></h2>
     <p id="message-text"></p>
@@ -130,7 +122,6 @@
 </div>
 
 <script>
-    // Função para exibir mensagem personalizada
     function showMessage(type) {
         const container = document.getElementById('message-container');
         const title = document.getElementById('message-title');
@@ -146,15 +137,8 @@
 
         container.style.display = 'block';
     }
-
     function closeMessage() {
         document.getElementById('message-container').style.display = 'none';
     }
-
-    // Exemplo: exibir mensagem de sucesso após registro
-    // showMessage('success');
-
-    // Exemplo: exibir mensagem de perda de dados
-    // showMessage('data-loss');
 </script>
 

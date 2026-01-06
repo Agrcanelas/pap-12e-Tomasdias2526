@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liga à La Tomeiz this is the end</title>
-
+    <title>Liga à La Tomeiz</title>
     <style>
-        /* RESET */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', sans-serif;
         }
-
         body {
             background: #f4f4f4;
             color: #111;
         }
-
-        /* NAVBAR */
         nav {
             width: 100%;
             background: #0d2c00;
@@ -28,7 +23,6 @@
             justify-content: space-between;
             align-items: center;
             font-size: 23px;
-
         }
         nav ul {
             display: flex;
@@ -43,7 +37,6 @@
             position: relative;
             transition: 0.3s;
         }
-
         nav a::after {
             content: "";
             position: absolute;
@@ -54,12 +47,9 @@
             background: #7aff65;
             transition: 0.1s;
         }
-
         nav a:hover::after {
             width: 100%;
         }
-
-        /* HERO */
       .hero {
     background: url("10c.png") center/cover no-repeat;
     height: 90vh;
@@ -68,8 +58,6 @@
     align-items: center;
     padding: 0 60px;
 }
-
-/* gradiente só no lado do texto */
 .hero::before {
     content: "";
     position: absolute;
@@ -84,7 +72,6 @@
     );
 }
 
-/* texto */
 .hero-content {
     position: relative;
     max-width:610px;
@@ -104,8 +91,6 @@
     opacity: 0.95;
     margin-bottom: 25px;
 }
-
-/* botão */
 .btn {
     background: #7aff65;
     color: #0d2c00;
@@ -113,8 +98,6 @@
     padding: 14px 28px;
     border-radius: 8px;
 }
-
-
         .btn {
             padding: 14px 28px;
             font-size: 18px;
@@ -124,13 +107,10 @@
             cursor: pointer;
             transition: 0.3s;
         }
-
         .btn:hover {
             background: #57d445;
             transform: scale(1.05);
         }
-
-        /* SECÇÕES */
         section {
             padding: 60px;
         }
@@ -142,8 +122,6 @@
 </head>
 
 <body>
-
-    <!-- NAV -->
     <nav>
         <h2 style="color: white;">Liga á laTomeiz</h2>
         <ul>
@@ -151,20 +129,14 @@
             <a href="calendario.php">Calendário</a></li>
             <a href="equipas.php">Equipas</a></li>
             <a href="jogadores.php">Jogadores</a></li>
-            
-            
-            
         </ul>
     </nav>
 
-    <!-- HERO -->
     <div class="hero">
         <div class="hero-content">
             <h1>A Turma Surpresa Será Campeã na Liga à La Tomeiz!</h1>
             <p>Não importa o resultado — importa a tua energia em campo. Junta-te à liga e mostra o teu talento!</p>
         </div>
     </div>
-
-
 </body>
 </html>

@@ -41,8 +41,6 @@
     color: #00ff6a !important;
 }
 
-/* ===== DROPDOWN ===== */
-
 .dropdown-content {
     display: none !important;
     position: absolute !important;
@@ -55,18 +53,15 @@
     box-shadow: 0 3px 10px rgba(0,0,0,0.4) !important;
     z-index: 999 !important;
 }
-
 .dropdown-content li a {
     display: block !important;
     padding: 12px !important;
     font-weight: 600 !important;
 }
-
 .dropdown-content li a:hover {
     background: #00ff6a !important;
     color: black !important;
 }
-
 .dropdown:hover .dropdown-content {
     display: block !important;
 }

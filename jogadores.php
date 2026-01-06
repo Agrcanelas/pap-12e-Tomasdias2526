@@ -24,7 +24,6 @@ body {
     background: rgba(0,0,0,0.55);
     z-index: 1;
 }
-
 .container {
     position: relative;
     z-index: 2;
@@ -35,22 +34,18 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .year-column {
     display: flex;
     flex-direction: column;
     gap: 20px;
     flex: 1;
 }
-
 .year-column h2 {
     color: #00ff40;
     text-align: center;
     margin-bottom: 10px;
     font-size: 24px;
 }
-
-/* Cards de jogadores e treinador */
 .player-card, .coach-card {
     background: rgba(19,49,5,0.85);
     border: 3px solid #00ff40;
@@ -64,7 +59,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 .player-card:hover, .coach-card:hover {
     background: #00ff4088;
     color: #000;
@@ -80,16 +74,12 @@ body {
     margin: 0;
     font-size: 14px;
 }
-
-/* Grid de jogadores por equipa */
 .team-players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-bottom: 20px;
 }
-
-/* RESPONSIVO */
 @media (max-width: 900px) {
     .container {
         flex-direction: column;
@@ -99,7 +89,6 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (max-width: 600px) {
     .team-players {
         grid-template-columns: 1fr;
@@ -119,7 +108,6 @@ const letras = ['A','B','C'];
 const container = document.currentScript.parentNode;
 
 anos.forEach(ano => {
-    // Coluna do ano
     const col = document.createElement('div');
     col.className = 'year-column';
     col.innerHTML = `<h2>${ano}º Ano</h2>`;
@@ -128,14 +116,12 @@ anos.forEach(ano => {
         const teamDiv = document.createElement('div');
         teamDiv.className = 'team-section';
         
-        // Nome da equipa
         const title = document.createElement('h3');
         title.style.color = '#00ff40';
         title.style.textAlign = 'center';
         title.innerText = `${ano}º${letra}`;
         teamDiv.appendChild(title);
 
-        // Treinador
         const coach = document.createElement('div');
         coach.className = 'coach-card';
         coach.innerHTML = `<h3>Treinador</h3><p>--</p>`;
@@ -156,9 +142,7 @@ anos.forEach(ano => {
     });
 
     container.appendChild(col);
-});
 </script>
-
 </div>
 </body>
 </html>
