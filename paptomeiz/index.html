@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIGA À LA TOMEIZ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .classificacao-grid { display: grid; gap: 25px; }
+        .equipas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; }
+        .locais-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    </style>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo_ligaa.png" alt="LIGA À LA TOMEIZ" class="logo-icon">
+                <span>LIGA À LA TOMEIZ</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="pages/equipas.html">Equipas</a></li>
+                    <li><a href="pages/jogadores.html">Jogadores</a></li>
+                    <li><a href="pages/classificacao.html">Classificação</a></li>
+                    <li><a href="pages/resultados.html">Resultados</a></li>
+                    <li><a href="pages/locais.html">Locais</a></li>
+                    <li><a href="pages/sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <img src="img/logo_ligaa.png" alt="LIGA À LA TOMEIZ" class="hero-logo-grande">
+            <h1>LIGA À LA TOMEIZ </h1>
+            <p>A liga escolar mais séria e competitiva do Mundo!</p>
+            <p style="font-size: 16px; margin-bottom: 40px;">Um torneio de futebol que une talentos do 10º, 11º e 12º ano em jogos emocionantes</p>
+            <div class="hero-buttons">
+                <a href="classificacao.html" class="btn btn-primary">Ver Classificação</a>
+                <a href="equipas.html" class="btn btn-secondary">Conhecer Equipas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CLUBES/EQUIPAS SECTION ========== -->
+    <section class="clubes-section">
+        <div class="container">
+            <h2 class="section-title">🏆CLUBES</h2>
+            
+            <!-- 10º ANO -->
+            <div class="ano-clubes">
+                <h3 class="ano-titulo-clubes">10º Ano</h3>
+                <div class="clubes-grid">
+                    <div class="clube-card">
+                        <div class="clube-logo"><img src="img/10A.png" alt="10A Tomeiz" style="width:100px;height:100px;border-radius:50%;border:4px solid #111;background:#0091ea;"></div>
+                        <div class="clube-nome">10A Tomeiz</div>
+                        <div class="clube-stats">
+                            <span class="badge-wins">5V</span>
+                            <span class="badge-draws">2E</span>
+                            <span class="badge-losses">1D</span>
+                        </div>
+                    </div>
+                    <div class="clube-card">
+                        <div class="clube-logo">⚫</div>
+                        <div class="clube-nome">10 B </div>
+                        <div class="clube-stats">
+                            <span class="badge-wins">6V</span>
+                            <span class="badge-draws">1E</span>
+                            <span class="badge-losses">1D</span>
+                        </div>
+                    </div>
+                    <div class="clube-card destaque">
+                        <div class="clube-logo">⭐</div>
+                        <div class="clube-nome">10 C</div>
+                        <div class="clube-stats">
+                            <span class="badge-wins">7V</span>
+                            <span class="badge-draws">0E</span>
+                            <span class="badge-losses">1D</span>
+                        </div>
+                        <div class="campeao-badge">CAMPEÃO</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11º ANO -->
+            <div class="ano-clubes">
+                <h3 class="ano-titulo-clubes">11º Ano</h3>
+                <div class="clubes-grid">
+                    <div class="clube-card">
+                        <div class="clube-logo">🟢</div>
+                        <div class="clube-nome">11 A</div>
+                        <div class="clube-stats">
+                            <span class="badge-wins">4V</span>
+                            <span class="badge-draws">2E</span>
+                            <span class="badge-losses">2D</span>
+                        </div>
+                    </div>
+                    <div class="clube-card">
+                        <div class="clube-logo">🟡</div>
+                        <div class="clube-nome">11 B</div>
+                        <div class="clube-stats">
+                            <span class="badge-wins">3V</span>
+                            <span class="badge-draws">3E</span>
+                            <span class="badge-losses">2D</span>
+                        </div>
+                    </div>
+                    <div class="clube-card destaque">
+                        <div class="clube-logo">🔴</div>
+                        <div class="clube-nome">11 C </div>
+                        <div class="clube-stats">
+                            <span class="badge-wins">5V</span>
+                            <span class="badge-draws">1E</span>
+                            <span class="badge-losses">2D</span>
+                        </div>
+                        <div class="vice-badge">VICE-CAMPEÃO</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12º ANO -->
+            <div class="ano-clubes">
+                <h3 class="ano-titulo-clubes">12º Ano</h3>
+                <div class="clubes-grid">
+                    <div class="clube-card">
+                        <div class="clube-logo">🟣</div>
+                        <div class="clube-nome">12 A</div>
+                        <div class="clube-stats">
+                            <span class="badge-wins">4V</span>
+                            <span class="badge-draws">1E</span>
+                            <span class="badge-losses">3D</span>
+                        </div>
+                    </div>
+                    <div class="clube-card">
+                        <div class="clube-logo">🟠</div>
+                        <div class="clube-nome">12 B</div>
+                        <div class="clube-stats">
+                            <span class="badge-wins">3V</span>
+                            <span class="badge-draws">2E</span>
+                            <span class="badge-losses">3D</span>
+                        </div>
+                    </div>
+                    <div class="clube-card">
+                        <div class="clube-logo">⚪</div>
+                        <div class="clube-nome">12 C</div>
+                        <div class="clube-stats">
+                            <span class="badge-wins">2V</span>
+                            <span class="badge-draws">1E</span>
+                            <span class="badge-losses">5D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CLASSIFICAÇÃO PREVIEW ========== -->
+    <section id="classificacao-preview" class="classificacao-section" style="padding: 80px 20px;">
+        <div class="container">
+            <h2 class="section-title">🏅 CLASSIFICAÇÃO GERAL</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 40px;">
+                <!-- 10º ANO -->
+                <div style="background: rgba(0,0,0,0.3); padding: 25px; border-radius: 12px; border-left: 4px solid #FFD700;">
+                    <h3 style="color: #FFD700; margin-bottom: 20px; font-size: 18px; text-transform: uppercase;">10º Ano</h3>
+                    <table class="tabela-classificacao" style="font-size: 13px;">
+                        <thead>
+                            <tr>
+                                <th class="pos">Pos</th>
+                                <th>Equipa</th>
+                                <th class="stat">Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pos">🥇</td>
+                                <td class="equipa-nome">10C</td>
+                                <td class="stat" style="color: #4CAF50; font-weight: bold;">21</td>
+                            </tr>
+                            <tr>
+                                <td class="pos">🥈</td>
+                                <td class="equipa-nome">10B</td>
+                                <td class="stat" style="color: #4CAF50; font-weight: bold;">19</td>
+                            </tr>
+                            <tr>
+                                <td class="pos">🥉</td>
+                                <td class="equipa-nome">10A</td>
+                                <td class="stat" style="color: #4CAF50; font-weight: bold;">17</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 11º ANO -->
+                <div style="background: rgba(0,0,0,0.3); padding: 25px; border-radius: 12px; border-left: 4px solid #FFD700;">
+                    <h3 style="color: #FFD700; margin-bottom: 20px; font-size: 18px; text-transform: uppercase;">11º Ano</h3>
+                    <table class="tabela-classificacao" style="font-size: 13px;">
+                        <thead>
+                            <tr>
+                                <th class="pos">Pos</th>
+                                <th>Equipa</th>
+                                <th class="stat">Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pos">🥇</td>
+                                <td class="equipa-nome">11C</td>
+                                <td class="stat" style="color: #4CAF50; font-weight: bold;">16</td>
+                            </tr>
+                            <tr>
+                                <td class="pos">🥈</td>
+                                <td class="equipa-nome">11A</td>
+                                <td class="stat" style="color: #4CAF50; font-weight: bold;">14</td>
+                            </tr>
+                            <tr>
+                                <td class="pos">🥉</td>
+                                <td class="equipa-nome">11B</td>
+                                <td class="stat" style="color: #4CAF50; font-weight: bold;">12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 12º ANO -->
+                <div style="background: rgba(0,0,0,0.3); padding: 25px; border-radius: 12px; border-left: 4px solid #FFD700;">
+                    <h3 style="color: #FFD700; margin-bottom: 20px; font-size: 18px; text-transform: uppercase;">12º Ano</h3>
+                    <table class="tabela-classificacao" style="font-size: 13px;">
+                        <thead>
+                            <tr>
+                                <th class="pos">Pos</th>
+                                <th>Equipa</th>
+                                <th class="stat">Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pos">🥇</td>
+                                <td class="equipa-nome">12A</td>
+                                <td class="stat" style="color: #4CAF50; font-weight: bold;">13</td>
+                            </tr>
+                            <tr>
+                                <td class="pos">🥈</td>
+                                <td class="equipa-nome">12B</td>
+                                <td class="stat" style="color: #4CAF50; font-weight: bold;">11</td>
+                            </tr>
+                            <tr>
+                                <td class="pos">🥉</td>
+                                <td class="equipa-nome">12C</td>
+                                <td class="stat" style="color: #4CAF50; font-weight: bold;">7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="pages/classificacao.html" class="btn btn-primary">Ver Classificação Completa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ESTATÍSTICAS ========== -->
+    <section class="stats-section" style="padding: 80px 20px; background: rgba(255, 215, 0, 0.05);">
+        <div class="container">
+            <h2 class="section-title">📊 ESTATÍSTICAS DA LIGA</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 50px;">
+                <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, #1565c0 0%, #1E90FF 100%); border-radius: 12px; box-shadow: 0 8px 25px rgba(21, 101, 192, 0.3);">
+                    <div style="font-size: 48px; font-weight: 900; color: #FFD700; margin-bottom: 10px;">9</div>
+                    <div style="color: #f5f5f5; font-size: 18px; font-weight: bold;">EQUIPAS</div>
+                </div>
+                <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, #1565c0 0%, #1E90FF 100%); border-radius: 12px; box-shadow: 0 8px 25px rgba(21, 101, 192, 0.3);">
+                    <div style="font-size: 48px; font-weight: 900; color: #FFD700; margin-bottom: 10px;">63</div>
+                    <div style="color: #f5f5f5; font-size: 18px; font-weight: bold;">JOGADORES</div>
+                </div>
+                <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, #1565c0 0%, #1E90FF 100%); border-radius: 12px; box-shadow: 0 8px 25px rgba(21, 101, 192, 0.3);">
+                    <div style="font-size: 48px; font-weight: 900; color: #FFD700; margin-bottom: 10px;">21</div>
+                    <div style="color: #f5f5f5; font-size: 18px; font-weight: bold;">JOGOS</div>
+                </div>
+                <div style="text-align: center; padding: 30px; background: linear-gradient(135deg, #1565c0 0%, #1E90FF 100%); border-radius: 12px; box-shadow: 0 8px 25px rgba(21, 101, 192, 0.3);">
+                    <div style="font-size: 48px; font-weight: 900; color: #FFD700; margin-bottom: 10px;">3</div>
+                    <div style="color: #f5f5f5; font-size: 18px; font-weight: bold;">LOCAIS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ÚLTIMOS RESULTADOS ========== -->
+    <section id="resultados" class="resultados-section" style="padding: 80px 20px;">
+        <div class="container">
+            <h2 class="section-title">⚡ ÚLTIMOS RESULTADOS</h2>
+            
+            <div class="jornada-container">
+                <div class="jornada-header">Jornada 1 - 15 de Janeiro de 2024</div>
+                <div class="jogos-list" style="max-width: 700px; margin: 0 auto;">
+                    <div class="jogo-item">
+                        <div class="jogo-header">Jogo 1</div>
+                        <div class="jogo-placar">
+                            <div class="equipa-jogo">
+                                <div class="equipa-jogo-nome">10A Tomeiz</div>
+                                <div class="placar">
+                                    <div class="golo">3</div>
+                                    <div class="vs">VS</div>
+                                    <div class="golo">1</div>
+                                </div>
+                                <div class="equipa-jogo-nome">10B Tomeiz</div>
+                            </div>
+                        </div>
+                        <div class="jogo-status">
+                            <span class="status-badge status-finalizado">Finalizado</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo-item">
+                        <div class="jogo-header">Jogo 2</div>
+                        <div class="jogo-placar">
+                            <div class="equipa-jogo">
+                                <div class="equipa-jogo-nome">10C Tomeiz</div>
+                                <div class="placar">
+                                    <div class="golo">2</div>
+                                    <div class="vs">VS</div>
+                                    <div class="golo">0</div>
+                                </div>
+                                <div class="equipa-jogo-nome">11A Tomeiz</div>
+                            </div>
+                        </div>
+                        <div class="jogo-status">
+                            <span class="status-badge status-finalizado">Finalizado</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo-item">
+                        <div class="jogo-header">Jogo 3</div>
+                        <div class="jogo-placar">
+                            <div class="equipa-jogo">
+                                <div class="equipa-jogo-nome">11B Tomeiz</div>
+                                <div class="placar">
+                                    <div class="golo">1</div>
+                                    <div class="vs">VS</div>
+                                    <div class="golo">2</div>
+                                </div>
+                                <div class="equipa-jogo-nome">11C Tomeiz</div>
+                            </div>
+                        </div>
+                        <div class="jogo-status">
+                            <span class="status-badge status-finalizado">Finalizado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="pages/resultados.html" class="btn btn-primary">Ver Todos os Resultados</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>📌 LIGA À LA TOMEIZ</h3>
+                <p>A liga escolar interturmas mais séria e competitiva da Escola Tomeiz, reunindo talentos do 10º, 11º e 12º ano.</p>
+            </div>
+            <div class="footer-section">
+                <h3>⚡ Rápidos Links</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="pages/classificacao.html">Classificação</a></li>
+                    <li><a href="pages/equipas.html">Equipas</a></li>
+                    <li><a href="pages/resultados.html">Resultados</a></li>
+                    <li><a href="pages/locais.html">Locais</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>📞 Contacto</h3>
+                <p>Escola Tomeiz<br>
+                Email: liga@escolatomeiz.pt<br>
+                Telefone: +351 XXX XXXXXX</p>
+            </div>
+            <div class="footer-section">
+                <h3>📊 Estatísticas</h3>
+                <p>Total de Equipas: 9<br>
+                Anos: 10º, 11º, 12º<br>
+                Jogadores: 63<br>
+                Locais de Jogo: 3</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024-2025 LIGA À LA TOMEIZ. Todos os direitos reservados.</p>
+            <p>Desenvolvido para Projeto de Aplicação Prática - 12º Ano Escolar</p>
+        </div>
+    </footer>
+</body>
+</html>
